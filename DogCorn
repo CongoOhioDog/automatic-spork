@@ -2452,7 +2452,7 @@ function Menu.Prompt(Message: string, Callback: any, ...)
     local Title = Instance.new("TextLabel")
 
     local Height = -20
-    local function CreateButton(Text, Callback, ...)
+    function Menu.CreateButton(Text, Callback, ...)
         local Arguments = {...}
 
         local Callback = typeof(Callback) == "function" and Callback or function() end
