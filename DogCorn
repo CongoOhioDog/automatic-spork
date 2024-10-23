@@ -2994,11 +2994,11 @@ end
 
 local function MenuNameUpdate()
     while (task.wait()) do
-        local Name = 'misery' 
-        local animatedText = '.cc' 
+        local Name = 'Patz' 
+        local animatedText = '.lol' 
         local PlaceHolder = ''
 
-        -- Animate the name 'craxes'
+        
         for i = 1, #Name do
             local Character = string.sub(Name, i, i)
             PlaceHolder = PlaceHolder .. Character
