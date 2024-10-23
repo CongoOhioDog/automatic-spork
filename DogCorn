@@ -1,4 +1,4 @@
-local Settings = {
+ local Settings = {
     Accent = Color3.fromHex("#8F30A7"),
     Font = Enum.Font.SourceSans,
     IsBackgroundTransparent = true,
@@ -2992,25 +2992,24 @@ end
 
 
 
-local function MenuNameUpdate()
+function Menu:NameUpdate()
     while (task.wait()) do
-        local Name = 'Patz' 
-        local animatedText = '.lol' 
+        local Name = 'Patz'  
+        local animatedText = '.lol'  
         local PlaceHolder = ''
 
-        
+      
         for i = 1, #Name do
             local Character = string.sub(Name, i, i)
             PlaceHolder = PlaceHolder .. Character
             Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. animatedText .. '</font>')  -- Set .lol color to red
-            task.wait(0.25)  -- Adjust the speed of animation here
+            task.wait(0.900) 
         end
 
-        -- Animate the '.lol' part character by character
         for j = 1, #animatedText do
             local Character = string.sub(animatedText, j, j)
             Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. string.sub(animatedText, 1, j) .. '</font>')  -- Keep .Reborn color red
-            task.wait(0.25)  -- Adjust the speed of animation here
+            task.wait(0.900)
         end
     end
 end
