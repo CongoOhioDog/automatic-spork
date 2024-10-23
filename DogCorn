@@ -2992,24 +2992,21 @@ end
 
 
 
-function Menu:NameUpdate()
-    while (task.wait()) do
-        local Name = 'Patz'  
-        local animatedText = '.lol'  
+function Menu:NameUpdate(waitTime, name, animatedText)
+    while true do
         local PlaceHolder = ''
 
-      
-        for i = 1, #Name do
-            local Character = string.sub(Name, i, i)
+        for i = 1, #name do
+            local Character = string.sub(name, i, i)
             PlaceHolder = PlaceHolder .. Character
-            Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. animatedText .. '</font>')  -- Set .lol color to red
-            task.wait(0.900) 
+            Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. animatedText .. '</font>')
+            task.wait(waitTime) 
         end
 
         for j = 1, #animatedText do
             local Character = string.sub(animatedText, j, j)
-            Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. string.sub(animatedText, 1, j) .. '</font>')  -- Keep .Reborn color red
-            task.wait(0.900)
+            Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. string.sub(animatedText, 1, j) .. '</font>')
+            task.wait(waitTime)
         end
     end
 end
