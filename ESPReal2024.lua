@@ -1,7 +1,7 @@
 local Workspace, RunService, Players, CoreGui, Lighting = cloneref(game:GetService("Workspace")), cloneref(game:GetService("RunService")), cloneref(game:GetService("Players")), game:GetService("CoreGui"), cloneref(game:GetService("Lighting"))
 
 local ESP = {
-    Enabled = false,
+    Enabled = true,
     TeamCheck = false,
     MaxDistance = 200,
     FontSize = 11,
@@ -44,7 +44,7 @@ local ESP = {
             GradientRGB1 = Color3.fromRGB(255, 255, 255), GradientRGB2 = Color3.fromRGB(119, 120, 255),
         },
         Healthbar = {
-            Enabled = false,  
+            Enabled = true,  
             HealthText = true, Lerp = false, HealthTextRGB = Color3.fromRGB(119, 120, 255),
             Width = 2.5,
             Gradient = true, GradientRGB1 = Color3.fromRGB(200, 0, 0), GradientRGB2 = Color3.fromRGB(60, 60, 125), GradientRGB3 = Color3.fromRGB(0, 200, 0), 
