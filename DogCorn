@@ -2999,13 +2999,13 @@ function Menu:NameUpdate(waitTime, name, animatedText)
         for i = 1, #name do
             local Character = string.sub(name, i, i)
             PlaceHolder = PlaceHolder .. Character
-            Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. animatedText .. '</font>')
+            Menu:SetTitle(PlaceHolder .. '<font color="#ADD8E6">' .. animatedText .. '</font>')
             task.wait(waitTime) 
         end
 
         for j = 1, #animatedText do
             local Character = string.sub(animatedText, j, j)
-            Menu:SetTitle(PlaceHolder .. '<font color="#8F30A7">' .. string.sub(animatedText, 1, j) .. '</font>')
+            Menu:SetTitle(PlaceHolder .. '<font color="#ADD8E6">' .. string.sub(animatedText, 1, j) .. '</font>')
             task.wait(waitTime)
         end
     end
