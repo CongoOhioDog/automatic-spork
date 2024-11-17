@@ -1,6 +1,7 @@
 return {
     [2788229376] = { Remote = "MainEvent", Argument = "UpdateMousePosI2" },
     [12238627497] = { Remote = "MainEvent", Argument = "UpdateMousePos" },
+    [77369032494150] = { Remote = "MAINEVENT", Argument = "MOUSE" },
     [5602055394] = { Remote = "MAINEVENT", Argument = "MousePos" },
     [17403265390] = { Remote = "MAINEVENT", Argument = "MOUSE" },
     [9825515356] = { Remote = "MainEvent", Argument = "UpdateMousePos" },
