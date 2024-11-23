@@ -2612,7 +2612,7 @@ end)
 			ContentOutline.AutomaticCanvasSize = Enum.AutomaticSize.Y
 			ContentOutline.MidImage = "rbxassetid://7783554086"
 			ContentOutline.ScrollBarImageColor3 = Color3.fromRGB(30, 30, 30)
-			ContentOutline.ScrollBarThickness = 7
+			ContentOutline.ScrollBarThickness = 9
 			ContentOutline.TopImage = "rbxassetid://7783554086"
 			ContentOutline.Active = true
 			ContentOutline.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
@@ -2620,6 +2620,7 @@ end)
 			ContentOutline.Position = UDim2.new(0, 0, 1, 0)
 			ContentOutline.Size = UDim2.new(1, 0, 0, 50)
 			ContentOutline.Visible = false
+            ContentOutline.ScrollBarOrientation = Enum.ScrollBarOrientation.Left
 
 			local UIListLayout = Instance.new("UIListLayout")
 			UIListLayout.Name = "UIListLayout"
